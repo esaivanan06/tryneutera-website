@@ -1,0 +1,445 @@
+/* =========================
+   Global Reset & Base
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  color: #111111;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.body-text {
+  color: #333;
+  line-height: 1.75;
+}
+
+/* =========================
+   Header / Navigation
+========================= */
+.site-header {
+  border-bottom: 1px solid #e5e5e5;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav {
+  min-height: 76px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 52px;     /* visually balanced for this logo */
+  width: auto;
+  display: block;
+}
+
+.nav-links a {
+  margin-left: 32px;
+  font-size: 1rem;
+  font-weight: 550;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #111;
+  transition: width 0.2s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* =========================
+   Hero Section
+========================= */
+.hero {
+  padding: 110px 0 90px;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.hero-subtext {
+  max-width: 740px;
+  font-size: 1.05rem;
+  color: #444444;
+  margin-bottom: 38px;
+  line-height: 1.7;
+}
+
+.hero .container {
+  max-width: 1100px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 14px 34px;
+  border: 1px solid #111111;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+/* =========================
+   Pillars
+========================= */
+.pillars {
+  padding: 80px 0;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+
+.pillar {
+  border-top: 2px solid #111111;
+  padding-top: 20px;
+}
+
+.pillar h3 {
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+}
+
+.pillar p {
+  font-size: 0.95rem;
+  color: #555555;
+}
+
+/* =========================
+   Footer
+========================= */
+.site-footer {
+  border-top: 1px solid #e5e5e5;
+  padding: 22px 0;
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 768px) {
+  .logo img {
+    height: 44px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 18px;
+    font-size: 0.9rem;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+  }
+
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .pillars-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   Inner Pages (Vision etc.)
+========================= */
+.page-section {
+  padding: 72px 0 80px;
+}
+
+.page-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.page-intro {
+  max-width: 760px;
+  font-size: 1.15rem;
+  color: #333333;
+  margin-bottom: 32px;
+}
+
+.vision-block p {
+  max-width: 760px;
+  font-size: 1rem;
+  color: #444444;
+  margin-bottom: 36px;
+}
+
+.vision-points ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 36px;
+}
+
+.vision-points li {
+  font-size: 0.95rem;
+  padding-left: 18px;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.vision-points li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #111111;
+}
+
+.vision-outlook p {
+  max-width: 760px;
+  font-size: 0.95rem;
+  color: #555555;
+}
+
+/* ===== Technology Page ===== */
+.tech-block {
+  margin-top: 52px;
+}
+
+.tech-title {
+  font-size: 1.6rem;
+  margin-bottom: 18px;
+}
+
+.tech-list {
+  list-style: none;
+  max-width: 760px;
+}
+
+.tech-list li {
+  margin-bottom: 16px;
+  color: #444;
+}
+
+.tech-list li strong {
+  color: #111;
+  font-weight: 600;
+}
+
+/* ===== Products Page ===== */
+.product-block {
+  margin-top: 56px;
+}
+
+.product-title {
+  font-size: 1.6rem;
+  margin-bottom: 18px;
+}
+
+.product-list {
+  list-style: none;
+  max-width: 760px;
+  margin-bottom: 20px;
+}
+
+.product-list li {
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.product-list li::before {
+  content: "— ";
+}
+
+/* ===== Company Page ===== */
+.company-block {
+  margin-top: 56px;
+}
+
+.company-title {
+  font-size: 1.6rem;
+  margin-bottom: 18px;
+}
+
+.founders-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+  max-width: 760px;
+}
+
+.founder-card {
+  border-top: 2px solid #111;
+  padding-top: 18px;
+}
+
+.founder-name {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.founder-role {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.founder-contact {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.company-list {
+  list-style: none;
+  max-width: 760px;
+  margin-bottom: 24px;
+}
+
+.company-list li::before {
+  content: "— ";
+}
+
+@media (max-width: 768px) {
+  .founders-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Contact Page ===== */
+.contact-block {
+  margin-top: 48px;
+  max-width: 760px;
+}
+
+.contact-title {
+  font-size: 1.6rem;
+  margin-bottom: 22px;
+}
+
+.contact-item {
+  margin-bottom: 22px;
+  color: #444;
+}
+
+.contact-item a {
+  color: #111;
+}
+
+.contact-item a:hover {
+  opacity: 0.7;
+}
+
+.nav-links a.active {
+  font-weight: 600;
+  border-bottom: 2px solid #111;
+  padding-bottom: 4px;
+}
+
+.nav-links a.active::after {
+  display: none;
+}
+
+.tech-list li,
+.product-list li,
+.company-list li {
+  line-height: 1.7;
+}
+
+.page-section > .container > div {
+  scroll-margin-top: 100px;
+}
+
+/* Page layout control */
+.site-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-main {
+  flex: 1;
+}
+
+/* Header scroll refinement */
+.site-header.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(6px);
+}
+
+/* Reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  /* Stagger support for reveal animations */
+  --delay: 0ms;
+  transition-delay: var(--delay);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transition: none;
+  }
+}
+
+.site-main {
+  flex: 1;
+  padding-bottom: 40px;
+}
