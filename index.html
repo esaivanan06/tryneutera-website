@@ -30,37 +30,53 @@
 <body class="site-body">
 
   <!-- Header -->
-  <header class="site-header">
+  <header class="site-header" aria-label="Primary navigation">
     <div class="container nav">
-      <div class="logo">
+      <a class="logo" href="#home" aria-label="Tryneutera home">
         <img
           src="assets/logo/Tryneutera_Logo_BG_Transparent.png"
           alt="Tryneutera Electronics Logo"
         />
-      </div>
+      </a>
 
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="pages/vision.html">Vision</a>
-        <a href="pages/technology.html">Technology</a>
-        <a href="pages/products.html">Products</a>
-        <a href="pages/company.html">Company</a>
-        <a href="pages/contact.html">Contact</a>
+      <nav class="nav-links" aria-label="Site sections">
+        <a href="#home">Home</a>
+        <a href="#vision">Vision</a>
+        <a href="#technology">Technology</a>
+        <a href="#products">Products</a>
+        <a href="#company">Company</a>
+        <a href="#contact" class="nav-cta">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="site-main">
   <!-- Hero -->
-  <section class="hero reveal">
-    <div class="container">
-      <h1>Engineering the Narrative of 6G & Beyond</h1>
-      <p class="hero-subtext">
-        Tryneutera Electronics Private Limited is an indigenous electronics
-        product company building future-ready telecom and networking
-        infrastructure.
-      </p>
-      <a href="pages/vision.html" class="btn-primary">Explore Our Vision</a>
+  <section id="home" class="hero reveal">
+    <div id="hero-particles"></div>
+
+    <div class="container hero-container">
+      <div class="hero-left">
+        <p class="hero-kicker">Indigenous telecom systems</p>
+        <h1>Engineering the Narrative of 6G & Beyond</h1>
+        <p class="hero-subtext hero-typewriter" aria-live="polite">
+          <span class="typing-text">Intelligence</span>
+        </p>
+        <div class="hero-actions">
+          <a href="#vision" class="btn-primary">Explore Our Vision</a>
+          <a href="#technology" class="btn-secondary">View Technology</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="chip" aria-hidden="true">
+          <div class="chip-board"></div>
+          <div class="chip-traces"></div>
+          <div class="chip-core">
+            <span>6G</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -83,6 +99,343 @@
       </div>
     </div>
   </section>
+
+  <section id="vision">
+  <!-- Vision Content -->
+  <section class="page-section">
+    <div class="container">
+      <h1 class="page-title">Vision</h1>
+
+      <p class="page-intro">
+        Tryneutera exists to design and build indigenous electronics that
+        strengthen India’s telecom and networking infrastructure for the
+        next generation of connectivity.
+      </p>
+
+      <div class="vision-block reveal">
+        <p>
+          India’s dependence on imported electronic systems limits strategic
+          autonomy and long-term innovation. Tryneutera was founded to address
+          this gap by focusing on native design, system-level engineering, and
+          product ownership.
+        </p>
+      </div>
+
+      <div class="vision-points reveal">
+        <ul>
+          <li>Aligned with the Bharat 6G Mission and future network evolution</li>
+          <li>Focused on indigenous design, development, and manufacturing</li>
+        </ul>
+      </div>
+
+      <div class="vision-outlook reveal">
+        <p>
+          Our long-term outlook is to contribute foundational technologies that
+          enable scalable, secure, and intelligent electronic infrastructure
+          across telecom, networking, and related domains.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  </section>
+
+  <section id="technology">
+<!-- ===== Technology Section ===== -->
+<section class="page-section">
+  <div class="container">
+
+    <h1 class="page-title">Technology</h1>
+
+    <p class="page-intro">
+      Tryneutera’s technology stack is designed around indigenous
+      system engineering, scalability, and long-term infrastructure relevance.
+    </p>
+
+    <p class="body-text">
+      Our focus is not limited to individual components or isolated devices.
+      We engineer complete electronic systems—hardware, firmware, and
+      network-aware architectures—optimized for future telecom and
+      networking environments.
+    </p>
+
+    <!-- ===== Focus Areas ===== -->
+    <div class="tech-block reveal">
+      <h2 class="tech-title">Core Engineering Focus</h2>
+
+      <ul class="tech-list">
+        <li>
+          <strong>Telecom Systems Engineering</strong> – Design and prototyping
+          of telecom-grade hardware platforms aligned with next-generation
+          network standards.
+        </li>
+        <li>
+          <strong>Home & Enterprise Networking</strong> – Indigenous networking
+          devices optimized for performance, reliability, and security.
+        </li>
+        <li>
+          <strong>Embedded & Firmware Design</strong> – Low-level software
+          tightly integrated with custom hardware.
+        </li>
+        <li>
+          <strong>Scalable Architecture</strong> – Modular designs enabling
+          rapid evolution from prototype to production.
+        </li>
+      </ul>
+    </div>
+
+    <!-- ===== Indigenous Approach ===== -->
+    <div class="tech-block reveal">
+      <h2 class="tech-title">Indigenous by Design</h2>
+
+      <p class="body-text">
+        Tryneutera is committed to building electronics that are designed,
+        developed, and manufactured in India. This approach strengthens
+        supply-chain independence and enables deep control over system design.
+      </p>
+
+      <ul class="tech-list">
+        <li>Native hardware design and validation</li>
+        <li>In-house firmware and system integration</li>
+        <li>Manufacturing aligned with Make in India initiatives</li>
+      </ul>
+    </div>
+
+    <!-- ===== Forward Looking ===== -->
+    <div class="tech-block reveal">
+      <h2 class="tech-title">Towards 6G & Beyond</h2>
+
+      <p class="body-text">
+        Our long-term technology roadmap aligns with the Bharat 6G Mission.
+        We are building foundational systems today that can evolve into
+        intelligent, high-capacity, and secure infrastructure for the future.
+      </p>
+
+      <p class="body-muted">
+        Intelligence, infrastructure, and innovation are not independent
+        goals—they are engineered together.
+      </p>
+    </div>
+
+  </div>
+</section>
+  
+  </section>
+
+  <section id="products">
+<!-- ===== Products Section ===== -->
+<section class="page-section">
+  <div class="container">
+
+    <h1 class="page-title">Products</h1>
+
+    <p class="page-intro">
+      Tryneutera develops indigenous electronic products focused on telecom
+      and networking infrastructure, engineered for scalability and
+      long-term relevance.
+    </p>
+
+    <p class="body-text">
+      Our product strategy follows a disciplined engineering approach—moving
+      from prototype validation to production-ready systems, while maintaining
+      full control over design and integration.
+    </p>
+
+    <!-- ===== Product Card: Telecom ===== -->
+    <div class="product-block reveal" style="--delay: 0ms">
+      <h2 class="product-title">Telecom Systems</h2>
+
+      <p class="body-text">
+        Our first product initiative is focused on telecom hardware platforms
+        designed to support next-generation network infrastructure.
+      </p>
+
+      <ul class="product-list">
+        <li>Currently in prototype development stage</li>
+        <li>Designed with modular, scalable architecture</li>
+        <li>Aligned with Bharat 6G Mission objectives</li>
+      </ul>
+
+      <p class="body-muted">
+        This platform serves as the foundation for future telecom-grade
+        devices and systems.
+      </p>
+    </div>
+
+    <!-- ===== Product Card: Networking ===== -->
+    <div class="product-block reveal" style="--delay: 120ms">
+      <h2 class="product-title">Home & Enterprise Networking</h2>
+
+      <p class="body-text">
+        Tryneutera is planning a range of indigenous networking products aimed
+        at home and enterprise environments, emphasizing reliability,
+        performance, and security.
+      </p>
+
+      <ul class="product-list">
+        <li>Custom-designed networking hardware</li>
+        <li>Firmware tightly integrated with hardware</li>
+        <li>Optimized for Indian network conditions</li>
+      </ul>
+    </div>
+
+    <!-- ===== Product Card: Storage ===== -->
+    <div class="product-block reveal" style="--delay: 240ms">
+      <h2 class="product-title">Storage Systems (Planned)</h2>
+
+      <p class="body-text">
+        As part of our long-term roadmap, Tryneutera plans to develop indigenous
+        storage solutions such as flash drives and related electronics.
+      </p>
+
+      <ul class="product-list">
+        <li>Focus on reliability and data integrity</li>
+        <li>Native controller and firmware design</li>
+        <li>Manufacturing aligned with Make in India</li>
+      </ul>
+
+      <p class="body-muted">
+        These products will be developed after successful validation of our
+        core telecom and networking platforms.
+      </p>
+    </div>
+
+  </div>
+</section>
+  </section>
+
+  <section id="company">
+<!-- ===== Company Section ===== -->
+<section class="page-section">
+  <div class="container">
+
+    <h1 class="page-title">Company</h1>
+
+    <p class="page-intro">
+      Tryneutera Electronics Private Limited is an early-stage electronics
+      product company focused on building indigenous telecom and networking
+      infrastructure.
+    </p>
+
+    <p class="body-text">
+      Founded with the objective of strengthening India’s electronic
+      self-reliance, Tryneutera works across system-level engineering—
+      from hardware design to firmware integration and manufacturing alignment.
+    </p>
+
+    <p class="body-text">
+      The company operates with a long-term vision, prioritizing engineering
+      depth, design ownership, and scalability over short-term market expansion.
+    </p>
+
+    <!-- ===== Mission ===== -->
+    <div class="company-block reveal">
+      <h2 class="company-title">Mission</h2>
+
+      <p class="body-text">
+        To design and build indigenous electronic systems that enable secure,
+        scalable, and future-ready telecom and networking infrastructure.
+      </p>
+    </div>
+
+    <!-- ===== Founders ===== -->
+    <div class="company-block reveal">
+      <h2 class="company-title">Founders</h2>
+
+      <div class="founders-grid">
+
+        <div class="founder-card" style="--delay: 0ms">
+          <h3 class="founder-name">E N Ananda Kumar</h3>
+          <p class="founder-role">Co-Founder</p>
+
+          <p class="founder-contact">
+            Email: <a href="mailto:enanandakumar@gmail.com">enanandakumar@gmail.com</a><br>
+            Phone: <a href="tel:+916380946945">+91 6380 946 945</a>
+          </p>
+        </div>
+
+        <div class="founder-card" style="--delay: 120ms">
+          <h3 class="founder-name">Prem Kumar S</h3>
+          <p class="founder-role">Co-Founder</p>
+
+          <p class="founder-contact">
+            Email: <a href="mailto:premkumars.rajan@gmail.com">premkumars.rajan@gmail.com</a><br>
+            Phone: <a href="tel:+919600339684">+91 9600 339 684</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===== Stage & Transparency ===== -->
+    <div class="company-block reveal">
+      <h2 class="company-title">Current Stage</h2>
+
+      <ul class="company-list">
+        <li>Early-stage product company</li>
+        <li>Currently developing first telecom prototype</li>
+        <li>Bootstrapped; fundraising planned</li>
+        <li>Focused on brand credibility and engineering validation</li>
+      </ul>
+
+      <p class="body-muted">
+        Tryneutera prioritizes transparency and disciplined execution as it
+        progresses from prototype to production.
+      </p>
+    </div>
+
+  </div>
+</section>
+  </section>
+
+  <section id="contact">
+<!-- ===== Contact Section ===== -->
+<section class="page-section">
+  <div class="container">
+
+    <h1 class="page-title">Contact</h1>
+
+    <p class="page-intro">
+      For partnerships, collaborations, or general enquiries, please reach
+      out using the details below.
+    </p>
+
+    <p class="body-text">
+      Tryneutera Electronics welcomes discussions with industry partners,
+      technology collaborators, and stakeholders aligned with our mission
+      to build indigenous electronic infrastructure.
+    </p>
+
+    <!-- ===== Contact Details ===== -->
+    <div class="contact-block reveal">
+      <h2 class="contact-title">Company Contact</h2>
+
+      <p class="contact-item">
+        <strong>Company:</strong><br>
+        Tryneutera Electronics Private Limited
+      </p>
+
+      <p class="contact-item">
+        <strong>Email:</strong><br>
+        <a href="mailto:enanandakumar@gmail.com">enanandakumar@gmail.com</a><br>
+        <a href="mailto:premkumars.rajan@gmail.com">premkumars.rajan@gmail.com</a>
+      </p>
+
+      <p class="contact-item">
+        <strong>Phone:</strong><br>
+        <a href="tel:+916380946945">+91 6380 946 945</a><br>
+        <a href="tel:+919600339684">+91 9600 339 684</a>
+      </p>
+    </div>
+
+    <!-- ===== Note ===== -->
+    <p class="body-muted">
+      We aim to respond to all legitimate enquiries promptly.
+    </p>
+
+  </div>
+</section>
+  </section>
   </main>
 
   <!-- Footer -->
@@ -94,6 +447,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
